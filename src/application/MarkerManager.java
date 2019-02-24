@@ -226,6 +226,7 @@ public class MarkerManager {
 //            marker.setZIndex(DEFAULT_Z);
         }
         map.fitBounds(bounds);
+
         // System.out.println("End of display Intersections");
 
     }
