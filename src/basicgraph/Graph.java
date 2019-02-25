@@ -124,7 +124,7 @@ public abstract class Graph {
 		// XXX: Implement in part 1 of week 2
 		List<Integer> degreeSequence = new ArrayList<>();
 		for(int i = 0; i < getNumVertices(); i++) {
-			degreeSequence.add(getNeighbors(i).size());
+			degreeSequence.add(getInNeighbors(i).size() + getNeighbors(i).size());
 		}
 		Collections.sort(degreeSequence, Collections.reverseOrder());
 		return degreeSequence;
@@ -248,7 +248,7 @@ public abstract class Graph {
 		GraphAdjList graphFromFile = new GraphAdjList();
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", graphFromFile);
 		System.out.println(graphFromFile);
-		
+		System.out.println("Degree Seq: " + graphFromFile.degreeSequence());
 		System.out.println("Observe all degrees are <= 12.");
 		System.out.println("****");
 
@@ -262,7 +262,6 @@ public abstract class Graph {
 		System.out.println(airportGraph);
 		System.out.println("Observe most degrees are small (1-30), eight are over 100.");
 		System.out.println("****");
-		
 		//For testing Part 2 functionality
 		// Test your distance2 code here.
 		System.out.println("Testing distance-two methods on sample graphs...");
