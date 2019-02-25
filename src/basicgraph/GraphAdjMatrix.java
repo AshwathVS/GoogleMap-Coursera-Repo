@@ -20,6 +20,7 @@ public class GraphAdjMatrix extends Graph {
 
 	private final int defaultNumVertices = 5;
 	private int[][] adjMatrix;
+	private int[][] twoHopMatrix;
 	
 	/** Create a new empty Graph */
 	public GraphAdjMatrix () {
@@ -105,7 +106,46 @@ public class GraphAdjMatrix extends Graph {
 	 */	
 	public List<Integer> getDistance2(int v) {
 		// XXX Implement this method in week 2
+		/**
+		 * Usual method
+		List<Integer> immediateNeighbors = getNeighbors(v);
+		List<Integer> twoHopNeighbors = new ArrayList<>();
+		immediateNeighbors.forEach(integer -> twoHopNeighbors.addAll(getNeighbors(integer)));
+		return twoHopNeighbors;
+		**/
+
+		/**
+		 * Matrix multiplication method
+		 * Square of the adj matrix will result in a matrix which indicates the two hop neighbors
+		 * **/
+		if(twoHopMatrix == null){
+			twoHopMatrix = new int[getNumVertices()][getNumVertices()];
+			for (int i = 0; i < getNumVertices(); i++){
+				for(int j = 0; j < getNumVertices(); j++){
+					twoHopMatrix[i][j] = 0;
+					for(int k = 0; k < getNumVertices(); k++){
+						twoHopMatrix[i][j] += (adjMatrix[i][k] * adjMatrix[k][j]);
+					}
+				}
+			}
+		}
+		else {
+			return gettwoHopNeighbor(v);
+		}
+
 		return null;
+
+	}
+
+
+	public List<Integer> gettwoHopNeighbor(int v){
+		List<Integer> neighbors = new ArrayList<Integer>();
+		for (int i = 0; i < getNumVertices(); i ++) {
+			for (int j=0; j< twoHopMatrix[v][i]; j ++) {
+				neighbors.add(i);
+			}
+		}
+		return neighbors;
 	}
 	
 	/**
