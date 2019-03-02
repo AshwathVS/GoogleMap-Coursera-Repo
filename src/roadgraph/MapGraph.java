@@ -8,8 +8,7 @@
 package roadgraph;
 
 
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Consumer;
 
 import geography.GeographicPoint;
@@ -24,14 +23,19 @@ import util.GraphLoader;
  */
 public class MapGraph {
 	//TODO: Add your member variables here in WEEK 3
-	
+	private Map<GeographicPoint, MapNode> mapNodes;
+	private int numVertices;
+	private int numEdges;
 	
 	/** 
 	 * Create a new empty MapGraph 
 	 */
 	public MapGraph()
 	{
-		// TODO: Implement in this constructor in WEEK 3
+		//TODO: Implement in this constructor in WEEK 3
+		mapNodes = new HashMap<>(10);
+		numEdges = 0;
+		numVertices = 0;
 	}
 	
 	/**
@@ -41,7 +45,7 @@ public class MapGraph {
 	public int getNumVertices()
 	{
 		//TODO: Implement this method in WEEK 3
-		return 0;
+		return numVertices;
 	}
 	
 	/**
@@ -51,7 +55,7 @@ public class MapGraph {
 	public Set<GeographicPoint> getVertices()
 	{
 		//TODO: Implement this method in WEEK 3
-		return null;
+		return mapNodes.keySet();
 	}
 	
 	/**
@@ -61,7 +65,7 @@ public class MapGraph {
 	public int getNumEdges()
 	{
 		//TODO: Implement this method in WEEK 3
-		return 0;
+		return numEdges;
 	}
 
 	
@@ -76,6 +80,12 @@ public class MapGraph {
 	public boolean addVertex(GeographicPoint location)
 	{
 		// TODO: Implement this method in WEEK 3
+		if(!mapNodes.containsKey(location)){
+			mapNodes.put(location, null);
+			numVertices++;
+			return true;
+		}
+
 		return false;
 	}
 	
@@ -95,7 +105,16 @@ public class MapGraph {
 			String roadType, double length) throws IllegalArgumentException {
 
 		//TODO: Implement this method in WEEK 3
-		
+		MapNode mapNode = mapNodes.get(from);
+		if(mapNode == null){
+			MapNode newMapNode = new MapNode(from);
+			newMapNode.addEdge(new MapEdge(from, to, roadType, roadName, length));
+			mapNodes.put(from, newMapNode);
+		}
+		else {
+			mapNode.addEdge(new MapEdge(from, to, roadType, roadName, length));
+		}
+		numEdges++;
 	}
 	
 
@@ -124,11 +143,49 @@ public class MapGraph {
 			 					     GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
 	{
 		// TODO: Implement this method in WEEK 3
-		
+		HashSet<GeographicPoint> visitedSet = new HashSet<>(10);
+		HashMap<GeographicPoint, GeographicPoint> parentMap = new HashMap<>(10);
+		Queue<GeographicPoint> toBeVisited = new LinkedList<>();
+		boolean isFound = false;
+		if((start == null || goal == null) || start.equals(goal)) {
+			System.out.println("Improper parameters for start and end nodes");
+			return null;
+		}
+		toBeVisited.add(start);
+		while(!toBeVisited.isEmpty()) {
+			GeographicPoint base = ((LinkedList<GeographicPoint>) toBeVisited).remove();
+			if(base.equals(goal)){
+				isFound = true;
+				break;
+			}
+			visitedSet.add(base);
+			MapNode mapNode = mapNodes.get(base);
+			List<MapEdge> neighbors = mapNode.getMapEdges();
+			for (MapEdge mapEdge: neighbors) {
+				if(!visitedSet.contains(mapEdge.getEnd())) {
+					((LinkedList<GeographicPoint>) toBeVisited).add(mapEdge.getEnd());
+					parentMap.put(mapEdge.getEnd(), base);
+				}
+			}
+		}
+
+		if(!isFound) {
+			System.out.println("No path exists between " + start + " " + goal);
+			return null;
+		}
+		else {
+			List<GeographicPoint> path = new LinkedList<>();
+			GeographicPoint curr = goal;
+			while (!curr.equals(start)) {
+				path.add(curr);
+				curr = parentMap.get(curr);
+			}
+			path.add(start);
+			Collections.reverse(path);
+			return path;
+		}
 		// Hook for visualization.  See writeup.
 		//nodeSearched.accept(next.getLocation());
-
-		return null;
 	}
 	
 
@@ -205,6 +262,10 @@ public class MapGraph {
 		MapGraph firstMap = new MapGraph();
 		System.out.print("DONE. \nLoading the map...");
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", firstMap);
+		GeographicPoint testStart = new GeographicPoint(1.0, 1.0);
+		GeographicPoint testEnd = new GeographicPoint(8.0, -1.0);
+		List<GeographicPoint> path = firstMap.bfs(testStart, testEnd);
+		Collections.reverse(path);
 		System.out.println("DONE.");
 		
 		// You can use this method for testing.  
@@ -217,7 +278,7 @@ public class MapGraph {
 		/*
 		MapGraph simpleTestMap = new MapGraph();
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", simpleTestMap);
-		
+
 		GeographicPoint testStart = new GeographicPoint(1.0, 1.0);
 		GeographicPoint testEnd = new GeographicPoint(8.0, -1.0);
 		
@@ -225,7 +286,7 @@ public class MapGraph {
 		List<GeographicPoint> testroute = simpleTestMap.dijkstra(testStart,testEnd);
 		List<GeographicPoint> testroute2 = simpleTestMap.aStarSearch(testStart,testEnd);
 		
-		
+
 		MapGraph testMap = new MapGraph();
 		GraphLoader.loadRoadMap("data/maps/utc.map", testMap);
 		
