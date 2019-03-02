@@ -160,11 +160,13 @@ public class MapGraph {
 			}
 			visitedSet.add(base);
 			MapNode mapNode = mapNodes.get(base);
-			List<MapEdge> neighbors = mapNode.getMapEdges();
-			for (MapEdge mapEdge: neighbors) {
-				if(!visitedSet.contains(mapEdge.getEnd())) {
-					((LinkedList<GeographicPoint>) toBeVisited).add(mapEdge.getEnd());
-					parentMap.put(mapEdge.getEnd(), base);
+			if(mapNode != null){
+				List<MapEdge> neighbors = mapNode.getMapEdges();
+				for (MapEdge mapEdge: neighbors) {
+					if(!visitedSet.contains(mapEdge.getEnd())) {
+						((LinkedList<GeographicPoint>) toBeVisited).add(mapEdge.getEnd());
+						parentMap.put(mapEdge.getEnd(), base);
+					}
 				}
 			}
 		}
