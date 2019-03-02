@@ -96,7 +96,7 @@ public class GraphAdjList extends Graph {
 		 List<Integer> immediateNeighbors = getNeighbors(v);
 		 List<Integer> twoHopNeighbors = new ArrayList<>();
 		 immediateNeighbors.forEach(integer -> twoHopNeighbors.addAll(getNeighbors(integer)));
-		 return twoHopNeighbors.stream().distinct().collect(Collectors.toList());
+		 return twoHopNeighbors;//.stream().distinct().collect(Collectors.toList());
 	}
 	
 	/**

@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e650969f-934e-4fdb-b61c-a29dba4bd40c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/application/MarkerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/application/MarkerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/basicgraph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/basicgraph/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/basicgraph/GraphAdjList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/basicgraph/GraphAdjList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/basicgraph/GraphAdjMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/basicgraph/GraphAdjMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicgraph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,32 +20,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java">
+        <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="60" column="10" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="1080">
+              <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week3example/Maze.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1998#2007#0" expanded="true" />
-                <element signature="e#3897#3906#0" expanded="true" />
+                <element signature="e#4611#4631#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/GraphLoader.java">
+        <entry file="file://$PROJECT_DIR$/src/week3example/MazeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="175" selection-start-line="175" selection-end-line="175" />
+            <state relative-caret-position="214">
+              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+              <folding>
+                <element signature="e#1154#1155#0" expanded="true" />
+                <element signature="e#1177#1178#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basicgraph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="1830">
               <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
               <folding>
                 <element signature="e#979#980#0" expanded="true" />
@@ -55,24 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/testdata/simpletest.map">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basicgraph/DegreeGrader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+            <state relative-caret-position="1170">
+              <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -90,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphGrader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+            <state relative-caret-position="1065">
+              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -99,14 +106,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="94" column="48" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="48" />
+            <state relative-caret-position="1395">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#876#885#0" expanded="true" />
-                <element signature="e#2050#2059#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +122,6 @@
       <find>to be</find>
       <find>week</find>
       <find>Implement</find>
-      <find>Implement this method in week 2</find>
       <find>getnum</find>
       <find>getNe</find>
       <find>implement</find>
@@ -128,7 +130,12 @@
       <find>week 1</find>
       <find>week 2</find>
       <find>Testing adjacency list</find>
+      <find>Test 12</find>
+      <find>GRAPH:</find>
+      <find>Implement this method in week 2</find>
       <find>out</find>
+      <find>key</find>
+      <find>dfs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,9 +146,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/week3example/MazeNode.java" />
         <option value="$PROJECT_DIR$/src/application/MarkerManager.java" />
-        <option value="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" />
-        <option value="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" />
         <option value="$PROJECT_DIR$/src/basicgraph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/basicgraph/DegreeGrader.java" />
+        <option value="$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java" />
+        <option value="$PROJECT_DIR$/src/basicgraph/GraphAdjList.java" />
+        <option value="$PROJECT_DIR$/src/html/index.html" />
       </list>
     </option>
   </component>
@@ -156,8 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,13 +182,6 @@
               <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="graders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UCSDGraphs" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="graders" type="462c0819:PsiDirectoryNode" />
-              <item name="mod1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UCSDGraphs" type="b2602c69:ProjectViewProjectNode" />
@@ -210,12 +210,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551124232718" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551529712865" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DegreeGrader">
+  <component name="RunManager" selected="Application.Maze">
     <configuration name="DegreeGrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicgraph.DegreeGrader" />
       <module name="UCSDGraphs" />
@@ -259,6 +261,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphGrader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basicgraph.GraphGrader" />
+      <module name="UCSDGraphs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basicgraph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MapApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.MapApp" />
       <module name="UCSDGraphs" />
@@ -272,11 +287,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week3example.Maze" />
+      <module name="UCSDGraphs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week3example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Maze" />
+        <item itemvalue="Application.MapApp" />
+        <item itemvalue="Application.GraphGrader" />
         <item itemvalue="Application.DegreeGrader" />
         <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.MapApp" />
       </list>
     </recent_temporary>
   </component>
@@ -292,18 +322,20 @@
       <updated>1551032952183</updated>
       <workItem from="1551032959934" duration="5000" />
       <workItem from="1551035331868" duration="3413000" />
-      <workItem from="1551119223213" duration="4279000" />
+      <workItem from="1551119223213" duration="6570000" />
+      <workItem from="1551205828818" duration="565000" />
+      <workItem from="1551528911995" duration="582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7697000" />
+    <option name="totallyTimeSpent" value="11135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,23 +402,77 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/basicgraph/GraphGrader.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week3example/Maze.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>graphFromFile</expression-string>
+        <expression-string>twoHopNeighbors.stream().distinct().collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pointMap</expression-string>
+        <expression-string>twoHopNeighbors.stream().distinct()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>getNeighbors(i)</expression-string>
+        <expression-string>twoHopNeighbors</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get(9)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get(8)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get(7)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>adjListsMap.get(6)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -397,13 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="222" column="23" selection-start-line="222" selection-start-column="23" selection-end-line="222" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -431,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="212" column="16" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MarkerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3015">
@@ -452,27 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week3example/MazeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="94" column="48" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#876#885#0" expanded="true" />
-            <element signature="e#2050#2059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -483,52 +534,102 @@
     <entry file="file://$PROJECT_DIR$/data/testdata/simpletest.map">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphGrader.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        <state relative-caret-position="-1043">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/GraphLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="2250">
           <caret line="175" selection-start-line="175" selection-end-line="175" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/DegreeGrader.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MapApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/graders/mod1/graph1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/graders/mod1/graph1.txt.degrees">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1998#2007#0" expanded="true" />
-            <element signature="e#3897#3906#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1080">
+          <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basicgraph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="1830">
           <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
           <folding>
             <element signature="e#979#980#0" expanded="true" />
             <element signature="e#1004#1005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/DegreeGrader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/graders/mod1/graph1.txt.degrees">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/graders/mod1/graph1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphGrader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basicgraph/GraphAdjList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3example/MazeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding>
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week3example/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+          <folding>
+            <element signature="e#4611#4631#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -129,12 +129,8 @@ public class GraphAdjMatrix extends Graph {
 				}
 			}
 		}
-		else {
-			return gettwoHopNeighbor(v);
-		}
 
-		return null;
-
+		return gettwoHopNeighbor(v);
 	}
 
 
